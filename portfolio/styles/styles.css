@@ -1,0 +1,11 @@
+.hero {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", serif;
+  justify-content: center;
+  min-height: 800px;
+  padding-bottom: 50px;
+  text-align: center;
+}
