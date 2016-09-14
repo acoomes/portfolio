@@ -73,7 +73,7 @@
   text-align: left;
 }
 
-.left-col h2 {
+#about .left-col h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 55px;
@@ -81,7 +81,34 @@
   margin-bottom: 0px;
 }
 
-.right-col h5 {
+#about .right-col h5 {
   font-size: 24px;
   line-height: 30px;
+}
+
+/* GALLERY SECTION */
+#gallery {
+  background: #EEFDF9;
+}
+
+#gallery .container {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery .col-md-4 {
+  overflow: hidden;
+  padding: 0px 5px 10px 5px;
+}
+
+#gallery .col-md-4 img {
+  height: 100%;
+  max-width: 390px;
+  max-height: 380px;
+}
+
+/* BRIDGE SECTION */
+.bridge {
+  background: url(../img/bridge/full-width.jpg);
+  background-size: cover;
 }
