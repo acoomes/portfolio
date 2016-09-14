@@ -1,3 +1,5 @@
+
+/* ENTIRE PAGE */
 .hero {
   align-items: center;
   background-size: cover;
@@ -21,6 +23,7 @@
   color: white;
 }
 
+/* INTRO SECTION */
 #intro h1,
 #intro h5 {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -51,4 +54,34 @@
 
 .cta:hover {
   background: #00CFFF;
+}
+
+/* ABOUT SECTION */
+#about {
+  min-height: 0;
+}
+
+#about .left-col {
+  color: #00CFFF;
+  padding: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+#about .right-col {
+  padding: 20px;
+  text-align: left;
+}
+
+.left-col h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.right-col h5 {
+  font-size: 24px;
+  line-height: 30px;
 }
