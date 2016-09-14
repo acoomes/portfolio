@@ -112,3 +112,32 @@
   background: url(../img/bridge/full-width.jpg);
   background-size: cover;
 }
+
+/* CONTACT SECTION */
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 740px;
+  text-align: center;
+}
+
+#social {
+  padding: 20px;
+}
+
+#social a {
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+#social img {
+  height: 20px;
+}
+
+#social img:hover {
+  opacity: 0.5;
+}
