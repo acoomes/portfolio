@@ -36,3 +36,19 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+.cta {
+  background: black;
+  border: 0px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0px;
+  width: 180px;
+}
+
+.cta:hover {
+  background: #00CFFF;
+}
