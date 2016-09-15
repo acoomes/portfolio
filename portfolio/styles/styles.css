@@ -62,7 +62,7 @@
 }
 
 #about .left-col {
-  color: #00CFFF;
+  color: #00E2AC;
   padding: 20px;
   text-align: right;
   text-transform: uppercase;
@@ -96,15 +96,15 @@
   padding: 0;
 }
 
-#gallery .col-md-4 {
+.col-md-4 {
   overflow: hidden;
-  padding: 0px 5px 10px 5px;
+  padding: 0 5px 10px 5px;
 }
 
-#gallery .col-md-4 img {
+.col-md-4 img {
   height: 100%;
   max-width: 390px;
-  max-height: 380px;
+  max-height: 280px;
 }
 
 /* BRIDGE SECTION */
@@ -178,4 +178,36 @@
 #copyright span {
   display: flex;
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 480px) {
+  #intro {
+    min-height: 640px;
+  }
+  #about .left-col {
+    font-size: 42px;
+    line-height: 40px;
+  }
+  #footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #footer h4 {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .row {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%;
+  }
+  .col-md-4 img {
+    width: 100%;
+    height: auto;
+    max-width: 992px;
+    max-height: 900px;
+  }
 }
