@@ -141,3 +141,41 @@
 #social img:hover {
   opacity: 0.5;
 }
+
+/* FOOTER */
+#footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 150px;
+  width: 100%;
+}
+
+#footer .footer-item {
+  flex: 1;
+  max-width: 100px;
+}
+
+#footer a {
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 20px;
+  margin-left: 5px;
+  padding: 0px;
+}
+
+
+#copyright {
+  color: #00E2AC;
+  margin-left: auto;
+  text-align: right;
+}
+
+#copyright span {
+  display: flex;
+  justify-content: flex-end;
+}
