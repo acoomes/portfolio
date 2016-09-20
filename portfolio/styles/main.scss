@@ -13,34 +13,36 @@ $sky-blue: #00CFFF;
   min-height: 800px;
   padding-bottom: 50px;
   text-align: center;
-}
-
-.hero h2 {
-  font-size: 40px;
-  line-height: 40px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.hero.landscape {
-  color: white;
+  &.landscape {
+    color: white;
+  }
+  &.bridge {
+    background: url(../img/bridge/full-width.jpg);
+    background-size: cover;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 }
 
 /* INTRO SECTION */
-#intro h1,
-#intro h5 {
-  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-}
-
-#intro h1 {
-  font-size: 72px;
-  line-height: 55px;
-}
-
-#intro h5 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+#intro {
+  h1,
+  h5 {
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  }
+  h1 {
+    font-size: 72px;
+    line-height: 55px;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
 }
 
 .cta {
@@ -53,96 +55,78 @@ $sky-blue: #00CFFF;
   line-height: 50px;
   padding: 0px;
   width: 180px;
-}
-
-.cta:hover {
-  background: $sky-blue;
+  &:hover {
+    background: $sky-blue;
+  }
 }
 
 /* ABOUT SECTION */
 #about {
   min-height: 0;
-}
-
-#about .left-col {
-  color: $sea-green;
-  padding: 20px;
-  text-align: right;
-  text-transform: uppercase;
-}
-
-#about .right-col {
-  padding: 20px;
-  text-align: left;
-}
-
-#about .left-col h2 {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 55px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-#about .right-col h5 {
-  font-size: 24px;
-  line-height: 30px;
+  .left-col {
+    color: $sea-green;
+    padding: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    h2 {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 55px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .right-col {
+    padding: 20px;
+    text-align: left;
+    h5 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
 }
 
 /* GALLERY SECTION */
 #gallery {
   background: #EEFDF9;
-}
-
-#gallery .container {
-  margin: 0;
-  padding: 0;
-}
-
-.col-md-4 {
-  overflow: hidden;
-  padding: 0 5px 10px 5px;
-}
-
-.col-md-4 img {
-  height: 100%;
-  max-width: 390px;
-  max-height: 280px;
-}
-
-/* BRIDGE SECTION */
-.bridge {
-  background: url(../img/bridge/full-width.jpg);
-  background-size: cover;
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .col-md-4 {
+    overflow: hidden;
+    padding: 0 5px 10px 5px;
+    img {
+      height: 100%;
+      max-width: 390px;
+      max-height: 280px;
+    }
+  }
 }
 
 /* CONTACT SECTION */
 #contact {
   text-align: center;
-}
-
-#contact p {
-  font-size: 24px;
-  margin-bottom: 40px;
-  max-width: 740px;
-  text-align: center;
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    max-width: 740px;
+    text-align: center;
+  }
 }
 
 #social {
   padding: 20px;
-}
-
-#social a {
-  margin: 0px 10px;
-  text-decoration: none;
-}
-
-#social img {
-  height: 20px;
-}
-
-#social img:hover {
-  opacity: 0.5;
+  a {
+    margin: 0px 10px;
+    text-decoration: none;
+  }
+  img {
+    height: 20px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 /* FOOTER */
@@ -155,32 +139,28 @@ $sky-blue: #00CFFF;
   padding-left: 10%;
   padding-bottom: 150px;
   width: 100%;
+  .footer-item {
+    flex: 1;
+    max-width: 100px;
+  }
+  a {
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-left: 5px;
+    padding: 0px;
+  }
 }
-
-#footer .footer-item {
-  flex: 1;
-  max-width: 100px;
-}
-
-#footer a {
-  color: black;
-  font-size: 16px;
-  line-height: 40px;
-  margin-right: 20px;
-  margin-left: 5px;
-  padding: 0px;
-}
-
 
 #copyright {
   color: $sea-green;
   margin-left: auto;
   text-align: right;
-}
-
-#copyright span {
-  display: flex;
-  justify-content: flex-end;
+  span {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -194,9 +174,9 @@ $sky-blue: #00CFFF;
   #footer {
     padding-right: 20px;
     padding-left: 20px;
-  }
-  #footer h4 {
-    padding-right: 20px;
+    h4 {
+      padding-right: 20px;
+    }
   }
 }
 
@@ -206,11 +186,11 @@ $sky-blue: #00CFFF;
   }
   .col-md-4 {
     width: 100%;
-  }
-  .col-md-4 img {
-    width: 100%;
-    height: auto;
-    max-width: 992px;
-    max-height: 900px;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 992px;
+      max-height: 900px;
+    }
   }
 }
