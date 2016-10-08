@@ -28,6 +28,80 @@ $sky-blue: #00CFFF;
   }
 }
 
+/* SIDEBAR */
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  padding-top: 10px;
+  font: "Roboto", serif;
+  color: white;
+  background: black;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  &.open {
+    width: 320px !important;
+  }
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  h2 {
+    font: 40px "Roboto", sans-serif;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0px;
+  }
+  a {
+    color: white;
+    font: 24px "Roboto", sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+#hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 34px;
+  width: 40px;
+  left: 30px;
+  top: 20px;
+  border-radius: 4px;
+  background: black;
+  z-index: 1;
+  &:hover {
+    background: $sky-blue;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+#close-btn {
+  margin-left: 30px;
+  margin-top: 10px;
+  align-self: flex-start;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 /* INTRO SECTION */
 #intro {
   background: url("../img/weather/hero-clear-night.jpg");
