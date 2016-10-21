@@ -85,7 +85,6 @@
 
 /* INTRO SECTION */
 #intro {
-  background: url("../img/weather/hero-clear-night.jpg");
   background-size: cover; }
   #intro h1,
   #intro h5 {
